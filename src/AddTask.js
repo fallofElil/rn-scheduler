@@ -1,15 +1,17 @@
 import React from 'react';
-import { Container, Button, Input } from 'native-base'
+import { Container, Content, Item, Button, Input, Icon } from 'native-base'
 
 export const AddTask = props => {
     return (
         <Container>
             <Content>
-                <Input placeholder="Описание задачи" />
-                <Button>
-                    <Icon name="plus" />
-                </Button>
+                <Item>
+                    <Input placeholder="Описание задачи" />
+                    <Button rounded>
+                        <Icon name="add" />
+                    </Button>
+                </Item>
             </Content>
         </Container>
-    )
+    );
 }

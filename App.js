@@ -1,26 +1,14 @@
 import React from 'react';
 import { Container, Header, Title, Content, Button, Left, Right, Body, Icon, Text } from 'native-base';
-//import { Navbar } from './src/Navbar';
-//import { AddTask } from './src/AddTask';
+import { Navbar } from './src/Navbar';
+import { AddTask } from './src/AddTask';
 
 export default function App() {
   return (
     <Container>
-      <Header>
-        <Left>
-          <Button transparent>
-            <Icon name='menu' />
-          </Button>
-        </Left>
-        <Body>
-          <Title>Header</Title>
-        </Body>
-        <Right />
-      </Header>
+      <Navbar title="Органайзер" />
       <Content>
-        <Text>
-          This is Content Section
-          </Text>
+        <AddTask />
       </Content>
     </Container>
   );
