@@ -1,13 +1,21 @@
-import React from 'react';
-import { Container, Content, Item, Button, Input, Icon } from 'native-base'
+import React, { Component } from 'react';
+import { Item, Button, Input, Icon } from 'native-base'
 
-export const AddTask = props => {
-    return (
-        <Item>
-            <Input placeholder="Описание задачи" />
-            <Button rounded>
-                <Icon name="add" />
-            </Button>
-        </Item>
-    );
+class AddTask extends Component {
+    /*const pressBtn = () => {
+        onSubmit('Была нажата кнопка');
+    }*/
+
+    render() {
+        return (
+            <Item>
+                <Input placeholder="Описание задачи" />
+                <Button rounded >
+                    <Icon name="add" />
+                </Button>
+            </Item>
+        );
+    }
 }
+
+export default AddTask;
