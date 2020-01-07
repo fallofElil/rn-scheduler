@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, Title, Content, Button, Left, Right, Body, Icon, Text } from 'native-base';
+import { Container, Content, Grid, Row, Col } from 'native-base';
 import { Navbar } from './src/Navbar';
 import { AddTask } from './src/AddTask';
 
