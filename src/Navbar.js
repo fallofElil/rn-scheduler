@@ -1,12 +1,16 @@
-import React from 'react';
-import { Container, Header, Body, Title } from 'native-base';
+import React, { Component } from 'react';
+import { Header, Body, Title } from 'native-base';
 
-export const Navbar = props => {
-    return (
-        <Header>
-            <Body>
-                <Title>{props.title}</Title>
-            </Body>
-        </Header>
-    );
+class Navbar extends Component {
+    render() {
+        return (
+            <Header>
+                <Body>
+                    <Title>{this.props.title}</Title>
+                </Body>
+            </Header>
+        );
+    }
 }
+
+export default Navbar;
